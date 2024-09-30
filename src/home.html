@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bungee+Tint&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js"></script>
+    <style>
+      .hd{
+        font-family: "Bungee Tint", sans-serif;
+        font-size: xx-large;
+      }
+      .hl1{
+        font-family: "Archivo Black", sans-serif;
+        font-size: xx-large;
+        color: rgb(226, 43, 43);
+      }
+      p{
+        font-family: "Be Vietnam Pro", sans-serif;
+      }
+      hr{
+        background-color: transparent;
+        height: 5px;
+      }
+      .hd1{
+        font-family: "Bungee Tint", sans-serif;
+        font-size: 3rem;
+      }
+.colw{
+    line-height: 1.5;
+    text-align: left;
+    font-size: 16px;
+    color: #2d3030;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    list-style: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    border: 0;
+    outline: 0;
+    padding: 25px 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #999;
+    }
+    h4{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: x-large;
+      color: #e90707;
+    }
+    </style>
+
+</head>
+<body>
+    
+
+<nav class="bg-white border-gray-200 dark:bg-gray-900 shadow-lg">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="login.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <span class="hd self-center text-2xl font-semibold whitespace-nowrap dark:text-white hover:text-white transition duration-300 ease-in-out"> YOUR CALC</span>
+      </a>
+      <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+          </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <a href="./calc.html">
+            <button type="button" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-800 to-red-500 group-hover:from-red-800 group-hover:to-red-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+              <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white text-red-500 rounded-md hover:text-white group-hover:bg-opacity-0">
+                <i class="fa-solid fa-hourglass-start"></i> Get Started
+              </span>
+              </button></a>
+          </li>
+          <li>
+            <a href="./login.html">
+            <button type="button" class="relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-800 to-red-500 group-hover:from-red-800 group-hover:to-red-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800">
+              <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white text-red-500 rounded-md hover:text-white group-hover:bg-opacity-0">
+                <i class="fa-solid fa-right-from-bracket"></i> Logout
+              </span>
+              </button></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav><br><br>
+
+
+  <div class="flex flex-wrap justify-center">
+    <div class="w-full md:w-1/2 xl:w-1/2 p-4">
+      <div class="bg-transparent rounded-lg p-4 mt-[20%] text-center">
+        <h1 class="hl1 text-left">Calculate Yor Budgets</h1>
+        <br>
+        <p class="text-left">
+          The Budget Calculator is an interactive, online experience to help you create a monthly budget. The analysis in this experience is based on the information provided by you. This information does not serve, either directly or indirectly, as legal, financial or tax advice and you should always consult a qualified professional legal, financial and/or tax advisor when making decisions relative to your individual tax situation. IMPORTANT: The illustrations or other information generated by the calculators are hypothetical in nature, do not reflect actual investment results, and are not guarantees of future results.
+        </p>
+        <br>
+        <div class="text-left">
+        <a href="./calc.html"><button type="button" class="text-red-700 hover:text-white border border-red-700 hover:bg-red-700 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
+          Get Started
+        </button></a></div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 xl:w-1/2 p-4">
+      <div class="bg-transparent rounded-lg p-4 flex justify-center">
+        <img src="..//img/Accountant--Streamline-Milano.png" alt="Bank Icon" class="w-[30rem]">
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 xl:w-1/2 p-4">
+      <div class="bg-transparent rounded-lg p-4 flex justify-center">
+        <img src="../img/Analyze-Data-5--Streamline-Milano.png" alt="" class="w-[30rem]">
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 xl:w-1/2 p-4">
+      <div class="bg-transparent rounded-lg p-4 mt-[40%] text-center">
+        <h1 class="hl1">Budget Calculator</h1>
+        <br>
+        <div class="colw">
+          <h4>Get your 50/30/20 budget and then personalize it to your priorities and situation</h4>           
+          <div class="main_upper_budget">
+          <div class="budget_inner">
+                      <p><span>The 50/30/20 approach </span>can be a helpful way to get started with budgeting. It’s a simple rule of thumb that suggests you put up to 50% of your after-tax income toward things you need, 30% toward things you want, and 20% toward savings.</p>
+            </div>
+            <div class="right_top_budget">
+            <div class="sec_box needs">
+            <div class="box_sec_thing">
+            <h4>50% Needs</h4>
+            </div>
+            <p>Things you must have or can't live without.</p>
+            <p>Examples: housing, groceries, utilities, transportation, child care, debt payments</p>
+        </div>
+              
+        <div class="sec_box wants">
+            <div class="box_sec_thing">
+            <h4>30% Wants</h4>
+            </div>
+
+            <p>Things you can cut back on or do without.</p>
+            <p>Examples: entertainment, dining out, clothing, splurges</p>
+        </div>   
+              
+              <div class="sec_box wants">
+        <div class="box_sec_thing">
+        <h4>20% Savings</h4>
+      </div>
+
+        <p>Money you save for future goals.</p>
+        <p>Examples: emergency fund, home, vacation, retirement, financial freedom</p>
+      </div>  
+            </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="bg-white p-4">
+    <div class="flex flex-row justify-between">
+      <p style="color: #e90707;">Get connected with us on social network:</p>
+      <div>
+        <a href="https://www.facebook.com/"><span><i class="fa-brands fa-facebook-f" style="color: #e90707;"></i></span></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://x.com/i/flow/login"><span><i class="fa-brands fa-square-x-twitter" style="color: #e90707;"></i></span></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.instagram.com/"><span><i class="fa-brands fa-instagram" style="color: #e90707;"></i></span></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://in.linkedin.com/"><span><i class="fa-brands fa-linkedin" style="color: #e90707;"></i></span></a>&nbsp;&nbsp;&nbsp;
+        <a href="https://www.google.com"><span><i class="fa-brands fa-google" style="color: #e90707;"></i></span></a>
+      </div>
+    </div>
+  </div><hr>
+  <footer class="bg-light-blue-100 p-10">
+    <div class="flex justify-between">
+        <div>
+            <h1 class="hd1">YOUR</h1>
+            <h1 class="hd1">CALC</h1>
+        </div>
+        <p class="hl1">TRACK &nbsp; SAVE &nbsp; THRIVE</p>
+        <div class="grid grid-cols-2 gap-4">
+            <div>
+                <h3 class="font-semibold">About Us</h3>
+                <ul>
+                    <li><a href="#">Our Company</a></li>
+                    <li><a href="#">Carrers</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h3 class="font-semibold">Expert Services</h3>
+                <ul>
+                    <li><a href="#">Income Tax</a></li>
+                    <li><a href="#">Accounting</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="font-semibold">Legal</h3>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <form action="#" method="POST" class="flex flex-col space-y-2">
+                <input type="email" placeholder="Your email" class="border p-2">
+                <button type="submit" class="text-red-500 hover:text-white border border-red-500 hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900">
+                    Subscribe
+                </button>
+            </form>
+        </div>
+    </div>
+    <address class="text-center">Contact Us: yourcalcofficials@gmail.com</address>
+</footer>
+<script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+</html>

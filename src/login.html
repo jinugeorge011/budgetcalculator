@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+
+    <title>Your Calc</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="script.js"></script>
+    <style>
+        #hd2{
+            font-family: "Bungee Tint", sans-serif;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center h-screen">
+    <div class="max-w-md w-full p-6 bg-gray-50 rounded-lg shadow-lg">
+        <div class="text-center mb-4">
+            <h1 id="hd2" class="text-xl font-semibold mt-2">Your Calc</h1>
+        </div>
+
+        <div class="mb-4">
+            <label for="account-number" class="block text-sm font-medium text-gray-700">Username</label>
+            <input type="text" id="username" class="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-red-400" required>
+        </div>
+        <div class="mb-4">
+            <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+            <input type="password" id="password" class="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-red-400" required>
+        </div>
+
+        <button onclick="logIn()" type="submit" class="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 w-full">Login</button>
+        <div class="text-center mt-4">
+            <a href="#" onclick="forgetPassword()" class="text-red-500 hover:underline">Forget password?</a> or
+            <a href="./index.html" class="text-red-500 hover:underline">Sign up</a>
+        </div>
+    </div>
+</body>
+</html>
